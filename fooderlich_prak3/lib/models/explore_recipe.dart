@@ -8,41 +8,43 @@ class RecipeCardType {
 }
 
 class ExploreRecipe {
-  String cardType;
-  String title;
-  String subtitle;
-  String backgroundImage;
-  String backgroundImageSource;
-  String message;
-  String authorName;
-  String role;
-  String profileImage;
-  int durationInMinutes;
-  String dietType;
-  int calories;
-  List<String> tags;
-  String description;
-  String source;
-  List<Ingredients> ingredients;
-  List<Instruction> instructions;
+  late String cardType;
+  late String title;
+  late String subtitle;
+  late String backgroundImage;
+  late String backgroundImageSource;
+  late String message;
+  late String authorName;
+  late String role;
+  late String profileImage;
+  late int durationInMinutes;
+  late String dietType;
+  late int calories;
+  late List<String> tags;
+  late String description;
+  late String source;
+  late List<Ingredients> ingredients;
+  late List<Instruction> instructions;
+
   ExploreRecipe(
-      {this.cardType,
-      this.title,
-      this.subtitle,
-      this.backgroundImage,
-      this.backgroundImageSource,
-      this.message,
-      this.authorName,
-      this.role,
-      this.profileImage,
-      this.durationInMinutes,
-      this.dietType,
-      this.calories,
-      this.tags,
-      this.description,
-      this.source,
-      this.ingredients,
-      this.instructions});
+      {required this.cardType,
+      required this.title,
+      required this.subtitle,
+      required this.backgroundImage,
+      required this.backgroundImageSource,
+      required this.message,
+      required this.authorName,
+      required this.role,
+      required this.profileImage,
+      required this.durationInMinutes,
+      required this.dietType,
+      required this.calories,
+      required this.tags,
+      required this.description,
+      required this.source,
+      required this.ingredients,
+      required this.instructions});
+
   ExploreRecipe.fromJson(Map<String, dynamic> json) {
     cardType = json['cardType'];
     title = json['title'];
