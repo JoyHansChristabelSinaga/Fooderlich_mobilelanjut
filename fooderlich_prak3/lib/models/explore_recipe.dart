@@ -17,9 +17,9 @@ class ExploreRecipe {
   late String authorName;
   late String role;
   late String profileImage;
-  late int durationInMinutes;
+  late String durationInMinutes;
   late String dietType;
-  late int calories;
+  late String calories;
   late List<String> tags;
   late String description;
   late String source;
